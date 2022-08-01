@@ -1,6 +1,6 @@
 # buyer-seller-cli-php
 
-composer install
+composer update
 
 cd src/
 

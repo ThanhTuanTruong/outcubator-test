@@ -8,9 +8,9 @@ use App\Entities\Buyer;
 
 class PrintBuyer extends Base
 {
-	public string $command = 'print:buyer';
+	public static string $command = 'print:buyer';
 
-	public function handle()
+	public static function handle()
 	{
 		$buyers = [
 			new Buyer('a', 'b', 'a@gmail.com', '0123456781'),
@@ -27,7 +27,7 @@ class PrintBuyer extends Base
 			print_r($sr->name());
 			print_r($sr->toArray());
 			print_r($sr->toJson());
-			print_r('/n');
+			print_r('\n');
 		}
 	}
 
